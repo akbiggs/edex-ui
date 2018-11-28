@@ -14,6 +14,10 @@ section#main_shell {
     transition: width .5s cubic-bezier(0.4, 0, 1, 1), height .5s cubic-bezier(0.4, 0, 1, 1);
 }
 
+section#main_shell.skip_animation {
+    transition: none;
+}
+
 h1#main_shell_greeting {
     font-size: 3.9vh;
     font-weight: normal;

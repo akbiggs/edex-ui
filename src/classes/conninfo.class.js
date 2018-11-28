@@ -80,10 +80,10 @@ class Conninfo {
             if (window.mods.netstat.offline) {
                 this.series[0].append(time, 0);
                 this.series[1].append(time, 0);
-                document.querySelector("div#mod_conninfo").setAttribute("class", "offline");
+                document.querySelector("div#mod_conninfo").classList.add("offline");
                 return;
             } else {
-                document.querySelector("div#mod_conninfo").setAttribute("class", "");
+                document.querySelector("div#mod_conninfo").classList.remove("offline");
                 this.si.networkStats(net.iface, (data) => {
 
                     let max0 = this.series[0].maxValue;
