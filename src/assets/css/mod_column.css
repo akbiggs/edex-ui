@@ -19,6 +19,12 @@ section.mod_column.activated {
     opacity: 1;
 }
 
+section.mod_column.skip_animation {
+    opacity: 1;
+    animation: none;
+    transition: none;
+}
+
 section.mod_column > h3.title {
     top: 0.74vh;
     width: 14.8%;
@@ -34,6 +40,12 @@ section.mod_column > div {
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     animation-play-state: paused;
+}
+
+section.mod_column > div.skip_animation {
+    opacity: 1;
+    animation: none;
+    transition: none;
 }
 
 @keyframes fadeIn {
